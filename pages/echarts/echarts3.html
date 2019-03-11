@@ -51,7 +51,7 @@
 				postData.node = node;
 			}
 	        $.ajax({
-				url: "http://localhost:3000/api/getAirQualityList",
+				url: "http://192.168.0.233:3000/api/getAirQualityList",
 				type: "post",
 				contentType: "application/json;charset=utf-8",
 				datatype: "jsonp",
@@ -66,13 +66,12 @@
 					if(result.resultCode == 0){
 			            myChart.setOption(loadData(result.data));
 					}else{
-						
 					}
 				}
 			});
 		});
         
-	function loadData(data){
+	function loadData(data){  
 		// 指定图表的配置项和数据
 		var timeList = [];
 		var timeHumidityList = [];

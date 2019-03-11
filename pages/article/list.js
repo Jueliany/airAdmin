@@ -32,7 +32,7 @@ layui.use(['form','table','laydate','laypage','element', 'jquery', 'admin'], fun
 				postData.end = end;
 			}
 			$.ajax({
-				url: "http://localhost:3000/api/getAirQualityList",
+				url: "http://192.168.0.233:3000/api/getAirQualityList",
 				type: "post",
 				contentType: "application/json;charset=utf-8",
 				datatype: "jsonp",
